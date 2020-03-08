@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import from 'src/App.js'
 
 export default class ColorBox extends Component {
 
@@ -11,7 +12,11 @@ export default class ColorBox extends Component {
   render() {
     return (
       <div className="color-box" style={opacity: null }}>
-        {/* your conditional code here! */}
+        if(this.props.opacity > 0.2){
+         return 0.1
+        }else{
+          return null
+        }
       </div>
     )
   }

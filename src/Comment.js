@@ -5,7 +5,7 @@ class Comment extends Component {
   render(){
     return(
       <div className="comment">
-        {this.props.commentText}
+        <BlogPost commentText={this.props.commentText} />
       </div>
     )
   }
